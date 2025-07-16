@@ -1,0 +1,136 @@
+.setup_1-container {
+    position: relative;
+    min-height: 100vh;
+    background-color: rgb(100, 179, 102);
+    overflow: hidden;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.header {
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+    background-color: #cccccc;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header p {
+    font-size: 22px;
+}
+
+.setup_1-board {
+    margin: auto;
+    width: fit-content;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.setup_1-board img {
+    width: 600px;
+    height: 350px;
+    opacity: 0.8;
+}
+
+
+
+.setup_1-table {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-55%, 200px);
+    margin-bottom: 30px;
+}
+
+.setup_1-table img {
+    max-width: 700px;
+    min-width: 500px;
+}
+
+.heading {
+    text-decoration: underline;
+    font-weight: 500;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.board-text {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.board-text h2 {
+    color: #fff;
+    margin-right: 5px;
+}
+
+.board-text h3 {
+    margin-right: 20px;
+    margin-top: 30px;
+    font-weight: 500;
+    color: white;
+    line-height: 30px;
+
+
+}
+
+.board-text h3 b {
+    text-decoration: underline;
+    margin-right: 10px;
+    color: khaki;
+
+}
+
+.header {
+    display: flex;
+}
+
+.header h2 b {
+    text-decoration: underline;
+    color: darkkhaki;
+}
+
+.header h2 {
+    margin-right: 10px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* .buttons button {
+    border-radius: 25px;
+    min-width: 100px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    background-color: #ffffff;
+    cursor: pointer;
+} */
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: white; /* green */
+  color: black;
+  border: none;
+  border-radius: 25px; /* rounded corners */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 10px;
+}
+
+.buttons button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}

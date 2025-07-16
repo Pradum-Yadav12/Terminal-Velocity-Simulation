@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fluid Mechanics Lab - Setup</title>
+  <link rel="stylesheet" href="./CSS/setup_1_exp.css">
+  <link rel="stylesheet" href="./CSS/setup_2_exp.css">
+  <style>
+    /* You can keep using your external CSS file */
+  </style>
+</head>
+<body>
+  <div id="setup1" class="setup_1-container">
+    <div class="header">
+      <h2>Instructions : </h2>
+      <p>Click the button "Start" to Start this Experiment..</p>
+    </div>
+
+    <div class="setup_1-board">
+      <img src="./images/school-blackboard.png" alt="" id="blackboard-img" />
+      <div class="board-text">
+        <h2 class="heading">Fluid Mechanics Lab</h2>
+        <h3><b>Experiment--&gt;</b>To find out the Terminal Velocity of Spherical body in Water</h3>
+      </div>
+    </div>
+
+    <div class="setup_1-table">
+      <img src="./images/fullSetUp.png" alt="" id="setup-img" />
+    </div>
+
+    <div class="buttons">
+      <button id="start-btn">Start</button>
+    </div>
+  </div>
+
+
+   <!-- Setup 2 -->
+  <div id="setup2" class="setup_1-container setup_2-container" style="display: none;">
+    <div class="header">
+      <h2>Instructions :</h2>
+      <p>Click the bottle and the cap to run the experiment.</p>
+    </div>
+    <div class="setup_1-board">
+      <img src="./images/school-blackboard.png" alt="" />
+      <div class="board-text">
+        <h2 class="heading">Fluid Mechanics Lab</h2>
+        <h3><b>Experiment--&gt;</b>To find out the Terminal Velocity of Spherical body in Water</h3>
+      </div>
+    </div>
+
+    <div class="setup_2-table">
+      <img class="table" src="./images/table.png" alt="" />
+      <div class="apparatus-1">
+        <img id="Beaker_app_1" src="./images/mainBeaker.png" alt="" />
+        <img id="waterstrip" class="waterstrip" src="./images/waterStrip.png" alt="" />
+      </div>
+      <div class="apparatus-2">
+        <img class="bottle" id="bottle_app_2" src="./images/full_bottle.png" alt="Bottle" onclick="dropWater()" />
+        <img class="cap" id="cap_app_2" src="./images/bottle-cap.png" alt="Cap" onclick="setMoveCap_forward()" />
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="alert('Next step not implemented')">Next</button>
+    </div>
+  </div>
+
+
+  <script src="./SCRIPT/script1.js"></script>
+  <script src="./SCRIPT/script2.js"></script>
+</body>
+</html>
