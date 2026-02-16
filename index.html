@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Fluid Mechanics Lab - Setup</title>
   <link rel="stylesheet" href="./CSS/setup_1_exp.css">
   <link rel="stylesheet" href="./CSS/setup_2_exp.css">
-  <style>
-    /* You can keep using your external CSS file */
-  </style>
+  <link rel="stylesheet" href="./CSS/apparatus_3.css">
+  <link rel="stylesheet" href="./CSS/apparatus_4.css">
+  <link rel="stylesheet" href="./CSS/apparatus_5.css">
+  <link rel="stylesheet" href="./CSS/message.css">
+  <link rel="stylesheet" href="./CSS/observation.css">
 </head>
+
 <body>
+
+  <!-- Message Box -->
+  <div class="message-box" style="display: none;">
+    <img class="message-img" src="#" alt="">
+    <button class="msg-close-btn" onclick='close_message()'>Close</button>
+  </div>
+
+  <!-- Table Container -->
+  <div class="table-record" style="display: none;">
+    <h3 class="table-record-head">Experiment Records Table</h3>
+    <div id="table-record-container-id" class="table-record-container"></div>
+    <button class="table-record-close-btn" onclick='closeTable()'>Close</button>
+    <button style="display: none;" id="table-record-btn-cal" class="table-record-close-btn" onclick='calculate_()'>Calculate</button>
+  </div>
+
   <div id="setup1" class="setup_1-container">
     <div class="header">
       <h2>Instructions : </h2>
@@ -33,13 +52,14 @@
     </div>
   </div>
 
-
-   <!-- Setup 2 -->
+  <!-- Setup 2 -->
   <div id="setup2" class="setup_1-container setup_2-container" style="display: none;">
+
     <div class="header">
       <h2>Instructions :</h2>
-      <p>Click the bottle and the cap to run the experiment.</p>
+      <p id="instruction-text">Click the bottle and the cap to run the experiment.</p>
     </div>
+
     <div class="setup_1-board">
       <img src="./images/school-blackboard.png" alt="" />
       <div class="board-text">
@@ -49,24 +69,60 @@
     </div>
 
     <div class="setup_2-table">
+
       <img class="table" src="./images/table.png" alt="" />
+
       <div class="apparatus-1">
+
         <img id="Beaker_app_1" src="./images/mainBeaker.png" alt="" />
         <img id="waterstrip" class="waterstrip" src="./images/waterStrip.png" alt="" />
+
+        <!-- Line X and Y -->
+        <div class="line-y-z" style="display: none;">
+          <div class="line">X</div>
+          <div class="line">Y</div>
+        </div>
+
       </div>
+
       <div class="apparatus-2">
         <img class="bottle" id="bottle_app_2" src="./images/full_bottle.png" alt="Bottle" onclick="dropWater()" />
         <img class="cap" id="cap_app_2" src="./images/bottle-cap.png" alt="Cap" onclick="setMoveCap_forward()" />
       </div>
+
+      <div class="apparatus-3">
+        <div class="apparatus-3-container">
+
+          <img class="ball ball-small" src='./images/Ball.png' onclick="ball_small()" alt="">
+          <img class="ball ball-medium" src='./images/Ball.png' onclick="ball_medium()" alt="">
+          <img class="ball ball-large" src='./images/Ball.png' onclick="ball_large()" alt="">
+
+          <div class="arrow-container" style="display: none;">
+            <img class="arrow-pointer" src='./images/arrow_pointer.png' alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <!---------------- Screw Gauge  ------------>
+      <div class="apparatus-4">
+        <img class="screw-gauge" id="screw_gauge" src='./images/screwGauge.png' alt="">
+      </div>
+
+      <!---------------- Stop Watch  ------------>
+      <div class="apparatus-5">
+        <img class="stop-watch" id="stop_watch" src='./images/stopwatch.png' alt="">
+      </div>
+
     </div>
 
     <div class="buttons">
       <button onclick="alert('Next step not implemented')">Next</button>
     </div>
+
   </div>
 
-
-  <script src="./SCRIPT/script1.js"></script>
-  <script src="./SCRIPT/script2.js"></script>
+  <script src="./SCRIPT/script.js"></script>
 </body>
+
 </html>

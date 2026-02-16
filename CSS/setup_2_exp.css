@@ -6,11 +6,11 @@
     background-color: rgb(100, 179, 102);
 }
 
-.setup_2-table {
+.setup_2-table { 
     position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-55%, 400px);
+    bottom: 50px;
+    left: 50%; 
+    transform: translate(-55%, 400px); 
 }
 
 .setup_2-table .table {
@@ -20,8 +20,7 @@
 .setup_2-table .apparatus-1 {
     position: absolute;
     top: -35%;
-    left: 150px;
-
+    left: 150px; 
 }
 
 .setup_2-table .apparatus-1 img {
@@ -47,8 +46,7 @@
     min-height: 200px;
     position: absolute;
     top: -80px;
-    left: 60%;
-
+    left: 60%; 
 }
 
 .setup_2-table .apparatus-2 .bottle {
@@ -82,16 +80,22 @@
 /* Line X Y  */
 .line-y-z {
     position: absolute;
-    
+    top: 15%;
+    left: 133px;
+
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 80px; 
 }
 
 .line {
+    padding: 5px;
     width: 20px;
     height: 2px;
-    background-color: rgb(189, 235, 5);
+    border-top: 5px solid yellow;
+    font-size: 20px;
+    color: rgb(246, 254, 7);
+    font-weight: 600;
 }
 
 

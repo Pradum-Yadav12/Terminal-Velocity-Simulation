@@ -1,0 +1,11 @@
+.apparatus-4 {
+    position: absolute;
+    top: 3%;
+    right: 10%;
+    display: none;
+}
+
+.apparatus-4 .screw-gauge {
+    width: 120px;
+    transform: rotateX(314deg);
+}

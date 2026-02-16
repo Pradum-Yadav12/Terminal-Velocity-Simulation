@@ -1,0 +1,37 @@
+ .apparatus-5 {
+     display: none;
+ }
+
+ .apparatus-5 .stop-watch {
+     position: absolute;
+     top: 10%;
+     left: 65%;
+     width: 70px;
+
+     animation: increase-size 3s ease-in-out 3ms forwards;
+     animation-duration: 3s;
+     animation-timing-function: ease-in-out;
+     animation-delay: 3ms;
+     animation-fill-mode: forwards;
+ }
+
+
+ @keyframes move-stop-watch {
+     0% {
+         width: 70px;
+         left: 65%;
+         top: 10%;
+     }
+
+     50% {
+         width: 70px;
+         left: 65%;
+         top: -43%;
+     }
+
+     100% {
+         width: 140px;
+         left: -15%;
+         top: -43%;
+     }
+ }

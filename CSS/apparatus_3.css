@@ -1,0 +1,115 @@
+.apparatus-3 {
+    position: absolute;
+    top: 7%;
+    left: 40%;
+}
+
+.apparatus-3-container {
+    position: relative;
+}
+
+.ball {
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5ms; 
+    animation-fill-mode: forwards;
+}
+
+.apparatus-3 .ball-small {
+    width: 35px;
+}
+
+.apparatus-3 .ball-medium {
+    width: 40px;
+}
+
+.apparatus-3 .ball-large {
+    width: 45px;
+}
+
+.arrow-pointer {
+    position: absolute;
+    top: 50px; 
+    width: 30px;
+    transform: rotateZ(-90deg); 
+}
+
+
+
+/* --- -----    Animation  -------------- */
+
+/*  -------------- First Ball --------------------- */
+@keyframes ball-one-move {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(0, -300px);
+    }
+
+    50% {
+
+        transform: translate(-140px, -300px);
+    }
+
+    60% {
+        
+        transform: translate(-140px, -250px);
+    }
+
+    100% {
+        
+        transform: translate(-140px, -130px);
+    }
+}
+
+/* ----------- Secound Ball -------------------  */
+
+@keyframes ball-two-move {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(0, -300px);
+    }
+
+    50% {
+        /* width: 40px; */
+        transform: translate(-175px, -300px);
+    }
+
+    60% {
+        /* width: 20px; */
+        transform: translate(-175px, -250px);
+    }
+
+    100% {
+        /* width: 20px; */
+        transform: translate(-175px, -130px);
+    }
+}
+
+/* ----------- Third ball ----------- */
+@keyframes ball-third-move {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(0, -300px);
+    }
+
+    50% {
+        transform: translate(-225px, -300px);
+    }
+
+    60% {
+        transform: translate(-225px, -250px);
+    }
+
+    100% {
+        transform: translate(-225px, -130px);
+    }
+}
