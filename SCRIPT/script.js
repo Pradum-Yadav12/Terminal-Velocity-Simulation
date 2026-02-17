@@ -28,15 +28,15 @@ const FINAL_ANIM_DELAY = 8000;
 const MESSAGE_DELAY = 10000;
 
 const time_img = {
-    5: '3.60-removebg-preview.png',
-    6: '3.50-removebg-preview.png',
-    7: '3.55-removebg-preview.png',
+    11: '3.60-removebg-preview.png',
+    12: '3.50-removebg-preview.png',
+    13: '3.55-removebg-preview.png',
     8: '3.10-removebg-preview.png',
     9: '3.00-removebg-preview.png',
     10: '3.05-removebg-preview.png',
-    11: '2.60-removebg-preview.png',
-    12: '2.55-removebg-preview.png',
-    13: '2.50-removebg-preview.png',
+    5: '2.60-removebg-preview.png',
+    6: '2.55-removebg-preview.png',
+    7: '2.50-removebg-preview.png',
 }
 
 // Get DOM elements (safe queries)
@@ -273,9 +273,9 @@ const calculate_ = () => {
     }
 
     // Only update entries that exist — use >= so step advances still produce results
-    if (ins_step >= 13 && tableData[0]) {
-        tableData[2] = {
-            ...tableData[2],
+    if (ins_step >= 7 && tableData[0]) {
+        tableData[0] = {
+            ...tableData[0],
             meanT: 2.55,
             v: 15.69,
             correctedV: 18.09
@@ -291,9 +291,9 @@ const calculate_ = () => {
         };
     }
 
-    if (ins_step >= 7 && tableData[0]) {
-        tableData[0] = {
-            ...tableData[0],
+    if (ins_step >= 13 && tableData[2]) {
+        tableData[2] = {
+            ...tableData[2],
             meanT: 3.55,
             v: 11.27,
             correctedV: 12.42
@@ -378,17 +378,17 @@ const table_show = () => {
     if ([11, 12, 13].includes(ins_step)) {
         if (ins_step === 11) {
             // Set 1
-            setExprimentData(3, 0.15, [2.60, null, null]);
+            setExprimentData(3, 0.15, [3.60, null, null]);
             renderTable();
         }
         if (ins_step === 12) {
             // fill 2nd reading for set 1
-            updateExprimentData(3, 1, 2.55);
+            updateExprimentData(3, 1, 3.50);
             renderTable();
         }
         if (ins_step === 13) {
             // fill 3rd reading for set 1 -> meanT will be computed
-            updateExprimentData(3, 2, 2.50);
+            updateExprimentData(3, 2, 3.55);
             renderTable(1);
         }
     }
@@ -410,15 +410,15 @@ const table_show = () => {
 
     if ([5, 6, 7].includes(ins_step)) {
         if (ins_step === 5) {
-            setExprimentData(1, 0.10, [3.60, null, null]); // setNo = 3
+            setExprimentData(1, 0.10, [2.60, null, null]); // setNo = 3
             renderTable();
         }
         if (ins_step === 6) {
-            updateExprimentData(1, 1, 3.50);
+            updateExprimentData(1, 1, 2.55);
             renderTable();
         }
         if (ins_step === 7) {
-            updateExprimentData(1, 2, 3.55);
+            updateExprimentData(1, 2, 2.50);
             renderTable(1);
         }
     }
